@@ -9,5 +9,5 @@ FROM nginx
 EXPOSE 80
 WORKDIR '/usr/share/nginx/html'
 RUN ls
-COPY --from=builder ./app/build ./
-
+COPY --from=builder /app/build .
+RUN ls
